@@ -48,6 +48,19 @@
             <version>1.7.30</version>
         </dependency>
     </dependencies>
+    <!-- Nexus Repository Configuration -->
+    <distributionManagement>
+        <repository>
+            <id>nexus</id>
+            <name>Releases</name>
+            <url>http://13.233.3.32:30801/repository/maven-releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>nexus</id>
+            <name>Snapshots</name>
+            <url>http://13.233.3.32:30801/repository/maven-snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
 
     <!-- Build configuration -->
     <build>
